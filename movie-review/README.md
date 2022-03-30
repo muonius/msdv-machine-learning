@@ -16,18 +16,18 @@ In this assignment, I applied common Natural Language Processing techniques to p
 
 **Step 2**: Next, I passed in a custom text preprocessor to the `CounterVectorizer()` function and I saw a major improvement in the Ridge Regression model.
 
-<img src="./images/Text Preprocessing.png" width="600" alt="Text Preprocessing">
+<img src="./images/Text Preprocessing.png" width="800" alt="Text Preprocessing">
 
 **Step 3**: I began testing `alpha` value for the Ridge Regression model. I tested values using a linear scale from default 1 to 16,000 in increments of 500. The test suggested I achieved the highest TPR and lowest FPR when the `alpha` value is around 16,000.
 
-<img src="./images/Alpha.png" width="600" alt="Alpha">
+<img src="./images/Alpha.png" width="800" alt="Alpha">
 
-This is when I submitted my first result([Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/movie-review/moviereviews_yang_v08_submission01.ipynb)). Upon reviewing the [test outcome](https://github.com/visualizedata/ml/blob/master/iterations/ML_1_01_moviereviews.ipynb), I know that my model might have some overfitting issue. In addition, I know I applied a rather small `alpha` value.
+This is when I submitted my first result ([Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/movie-review/moviereviews_yang_v08_submission01.ipynb)). Upon reviewing the [test outcome](https://github.com/visualizedata/ml/blob/master/iterations/ML_1_01_moviereviews.ipynb), I know that my model might have some overfitting issue. In addition, I know I applied a rather small `alpha` value.
 
-**Step 5**: I moved on to experimenting `C value` for the Support Vector Machine Linear model. A small `C value` creates soft margin that allows more mistakes but regulates the model while bigger `C value` creates greater margin. This time, I learned to test my `C value` in logarithmic scale of 1e-06, 1e-05, 1e-04, 1e-03....100, and 1000. The result indicated that I achieved the highest TPR and lowest FPR with a minimum `C value` of 0.001.
+**Step 4**: I moved on to experimenting `C value` for the Support Vector Machine Linear model. A smaller `C value` creates soft margin that allows more mistakes but regulates the model while a bigger `C value` creates greater margin but is prone to overfitting. This time, I learned to test my `C value` in logarithmic scale of 1e-06, 1e-05, 1e-04, 1e-03....100, and 1000. The result indicated that I achieved the highest TPR and lowest FPR with a minimum `C value` of 0.001.
 
-<img src="./images/SVM.png" width="600" alt="SVM C value">
+<img src="./images/SVM.png" width="800" alt="SVM C value">
 
-**Step 6**: Going back to Ridge Regression, I bumped the `alpha` in logarithmic scale. However, my performance did not improve. I decided to remove my own text preprocessor and again, bring the model to baseline. After clearing up the preprocessor, a larger `alpha` did bring a lot better result, but is it overfitting? I think I will need to submit my second test and find out. ([Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/movie-review/moviereviews_yang_v11_submission02.ipynb))
+**Step 5**: Going back to Ridge Regression, I bumped the `alpha` in logarithmic scale. However, my performance did not improve. I decided to remove my own text preprocessor and again, bring the model to baseline. After clearing up the preprocessor, a larger `alpha` did bring a lot better result, but is it overfitting? I think I will need to submit my second test and find out. ([Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/movie-review/moviereviews_yang_v11_submission02.ipynb))
 
-<img src="./images/Submissions.png" width="600" alt="Submissions Comp">
+<img src="./images/Submissions.png" width="800" alt="Submissions Comp">
