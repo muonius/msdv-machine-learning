@@ -10,7 +10,7 @@ In this assignment, I applied common Natural Language Processing techniques to p
 
 ### Process
 
-**Step 1**: After reviewing the starter-code, I decided to simplify it first and bring it to its simpliest form, which would be my baseline. Looking at the ROC chart comparison, I know that for my corpus, the baseline TPR is around 85% and FPR around 16%. I then played around with minor tweaks on model setup with increased complexity.
+**Step 1**: After reviewing the starter-code, I decided to bring the `processing_raw_data` function to its simpliest form, by using default `CountVecotrizer()`, which would be my baseline. Looking at the ROC chart comparison, I know that for my corpus, the baseline TPR is around 85% and FPR around 16%. I then played around with tweaks on model setup with increased complexity.
 
 <img src="./images/Baseline.png" width="600" alt="Baseline ROCs">
 
