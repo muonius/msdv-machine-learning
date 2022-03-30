@@ -12,7 +12,7 @@ In this assignment, I applied common Natural Language Processing techniques to p
 
 **Step 1**: After reviewing the starter-code, I decided to bring the `processing_raw_data` function to its simpliest form, by using default `CountVecotrizer()`, which would be my baseline. Looking at the ROC chart comparison, I know that for my corpus, the baseline TPR is around 85% and FPR around 16%. I then played around with tweaks on model setup with increased complexity.
 
-<img src="./images/Baseline.png" width="600" alt="Baseline ROCs">
+<img src="./images/Baseline.png" width="800" alt="Baseline ROCs">
 
 **Step 2**: Next, I passed in a custom text preprocessor to the `CounterVectorizer()` function and I saw a major improvement in the Ridge Regression model.
 
