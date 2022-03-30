@@ -16,7 +16,7 @@ In this assignment, I applied common Natural Language Processing techniques to p
 
 **Step 2**: Next, I passed in a custom text preprocessor to the `CounterVectorizer()` function and I saw a major improvement in the Ridge Regression model.
 
-<img src="./images/Text Preprocessing.png" width="800" alt="Text Preprocessing">
+<img src="./images/Text Preprocessing.png" width="600" alt="Text Preprocessing">
 
 **Step 3**: I began testing `alpha` value for the Ridge Regression model. I tested values using a linear scale from default 1 to 16,000 in increments of 500. The test suggested I achieved the highest TPR and lowest FPR when the `alpha` value is around 16,000.
 
