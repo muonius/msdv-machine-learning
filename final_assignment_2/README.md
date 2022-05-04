@@ -14,7 +14,7 @@ Step 2: Drawing from Skimage documentation, I changed activation to identity whi
 
 Step 3: I then moved onto image processing after examining the false positive and false negative images. It seems that the horizontal line and noises contribute to the mis-categorizations. I researched to find a method to remove noises and adopted Gaussian_blur filter, a rather subtle change to the original image processing method. In the end, I saw the test set outcome was worsen. Further research and testing are needed.
 
-<img src="./assets/Image_Processing.png" width="500" alt="Gaussian blur">
+<img src="./assets/Image_Processing.png" width="600" alt="Gaussian blur">
 
 [Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/deep_learning/planeimages_yang_v06_submission01.ipynb)
 
