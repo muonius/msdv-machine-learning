@@ -16,7 +16,7 @@ Step 3: I then moved onto image processing after examining the false positive an
 
 <img src="./assets/Image_Processing.png" width="600" alt="Gaussian blur">
 
-[Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/final_assignment_2/planeimages_yang_v06_submission01.ipynb)
+[Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/deep_learning/planeimages_yang_v06_submission01.ipynb)
 
 **Iteration 2**: Before testing out hidden layers, I wanted to further fine-tune image processing left over from last time. I tried a bunch of different features and filters, and most of them worsened the performance. I even tried Histogram Equalization which is said to improve exposure, but didn’t see an improvement. At the end, I settled with corner_harris(method='k', k=0.05, eps=1e-06, sigma=2) with a promising TPR of 0.9.
 
@@ -26,12 +26,12 @@ Next, while keeping all other parameters and settings constant, I looped through
 
 <img src="./assets/Hidden_Layers.png" width="600" alt="Hidden Layers">
 
-At this point, I realized I couldn't go any further Neural Network. So for my 3rd iteration, I decided to switch gears and use Histogram of Oriented Gradients (HOG) and simple Perceptron.
+At this point, I realized I couldn't go any further with Neural Network. So for my 3rd iteration, I decided to switch gears and use Histogram of Oriented Gradients (HOG) and simple Perceptron.
 
-[Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/final_assignment_2/planeimages_yang_v08_hog_perceptron_submission02.ipynb)
+[Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/deep_learning/planeimages_yang_v08_hog_perceptron_submission02.ipynb)
 
 **Iteration 3**: Since HOG really surfaces the complexity of images to its surface layer. It seems to me the HOG feature is enough for image processing and any additional filters will mess up with HOG. And because of the single layer complexity, Perceptron is preferred over Neural Network.
 
 <img src="./assets/Perceptron_Fit.png" width="600" alt="Perceptron Fit">
 
-[Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/final_assignment_2/planeimages_yang_v09_hog_perceptron_submission03.ipynb)
+[Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/deep_learning/planeimages_yang_v09_hog_perceptron_submission03.ipynb)
