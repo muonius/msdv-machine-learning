@@ -31,3 +31,5 @@ This is when I submitted my first result ([Jupyter Notebook](https://github.com/
 **Step 5**: Going back to Ridge Regression, I bumped the `alpha` in logarithmic scale. However, my performance did not improve. I decided to remove my own text preprocessor and again, bring the model to baseline. After clearing up the preprocessor, a larger `alpha` did bring a lot better result, but is it overfitting? I think I will need to submit my second test and find out. ([Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/movie-review/moviereviews_yang_v11_submission02.ipynb))
 
 <img src="./images/Submissions.png" width="800" alt="Submissions Comp">
+
+**Step 6**: For my third submission, I added back my own text preprocessor and unfortunately the performance worsened. However, it's still a good learning experience that the simpliest form of Bag of Words is actually the best performing model. ([Jupyter Notebook](https://github.com/muonius/msdv-machine-learning/blob/master/final_assignment_1/moviereviews_yang_v12_submission03.ipynb))
