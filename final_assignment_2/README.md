@@ -24,7 +24,7 @@ Step 3: I then moved onto image processing after examining the false positive an
 
 Next, while keeping all other parameters and settings constant, I looped through a list of [100,150,200,250] with each element representing a hidden layer number. The test result showed that the TPR remained at 0.9. I did get the best accuracy when hidden layer is equal to 200. The almost invisible change might be attributed to that I over-optimized other features so I decided it’s time to submit my test result and see where to improve further.
 
-<img src="./assets/Hidden_Layers.png" width="600" alt="Hidden Layers">
+<img src="./assets/Hidden_Layers.png" width="500" alt="Hidden Layers">
 
 At this point, I realized I couldn't go any further with Neural Network. So for my 3rd iteration, I decided to switch gears and use Histogram of Oriented Gradients (HOG) and simple Perceptron.
 
